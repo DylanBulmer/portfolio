@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #0066ff;
+  background: linear-gradient(141deg, #2BADE2, #2B0FE0) no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  position: fixed;
+  top: 2.5em;
+  left: calc(50% - 93px);
+  text-align: center;
+  font-weight: bold;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #FFF;
+}
+
+tile {
+  display: inline-block;
+  background-color: #FFF;
+  background: linear-gradient(141deg, #FFF 0%, #BBB 75%);
+  width: 6em;
+  height: 6em;
+  border-radius: 6em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+tile:hover {
+  background: linear-gradient(141deg, #BBB 0%, #FFF 75%);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#positioned {
+  position: fixed;
+  top: 25em;
+  min-width: 31em;
+  left: calc(50% - 15.5em);
+}
+
+@media all and (max-width: 40em) {
+  #positioned {
+    min-width: 12.3em;
+    width: 6em;
+    top: 10em;
+    left: calc(50% - 6.5em);
+  }
+}
+
+fancyLetter:hover {
+  color: #BBB;
+}
+  
+@media handheld and (orientation:portrait) {
+  #positioned {
+    min-width: 12.3em;
+    width: 6em;
+    top: 10em;
+    left: calc(50% - 6.5em);
+  }
+}
