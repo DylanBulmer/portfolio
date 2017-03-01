@@ -44,10 +44,10 @@ a {
   position: fixed;
   top: 25em;
   min-width: 31em;
-  left: calc(50% - 15.5em);
+  left: calc(50% - 296px);
 }
 
-@media all and (max-width: 40em) {
+@media all and (max-width: 640px) {
   #positioned {
     min-width: 12.3em;
     width: 6em;
@@ -58,13 +58,4 @@ a {
 
 fancyLetter:hover {
   color: #BBB;
-}
-  
-@media handheld and (orientation:portrait) {
-  #positioned {
-    min-width: 12.3em;
-    width: 6em;
-    top: 10em;
-    left: calc(50% - 6.5em);
-  }
 }
